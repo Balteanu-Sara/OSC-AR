@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>OSC-AR Scholarly HTML Report</title>
+
+    <link rel="stylesheet" href="https://w3c.github.io/scholarly-html/css/scholarly.min.css">
+    <script src="https://w3c.github.io/scholarly-html/js/scholarly.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="banner">
+    </div>
+    <h1><project>OSC-AR</project> Raport - Scholarly HTML</h1>
+</header>
+
+<div role="contentinfo">
+    <dl>
+        <dt>Authors</dt>
+        <dd>
+            <a href="https://github.com/sarabalteanu" target="_blank">Balteanu Sara</a>,
+            <a href="https://github.com/biiianca" target="_blank">Chilariu Bianca</a>
+            <a href="https://github.com/Anda-Moraru" target="_blank">Moraru Anda</a>
+        </dd>
+    </dl>
+</div>
+<section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+    <h2>Abstract</h2>
+    <p>
+        Acest document cuprinde aspectele tehnice, arhitectura aplicatiei si interactiunea cu utilizatorul,
+        ale proiectului OSC-AR, in cadrul materiei
+        <web>Human-Computer Interaction</web>, realizat de echipa formata din:  
+        <a href="https://github.com/sarabalteanu">Balteanu Sara</a>,
+        <a href="https://github.com/biiianca">Chilariu Bianca</a> si
+        <a href="https://github.com/Anda-Moraru">Moraru Anda</a>
+        <br>
+        <br>
+        <infoiasi><i>Universitatea Alexandru Ioan Cuza din Iasi, Facultatea de Informatica</i></infoiasi>
+    </p>
+</section>
+<!--1.Introduction-->
+<section id="introduction" role="doc-introduction">
+    <h2>Introducere</h2>
+    <section id="purpose">
+        <!-- review? -->
+        <h3>Scop</h3>
+        <p>
+            Aplicatia OSC-AR, descrisa si detaliata in acest document, creeaza un spatiu potrivit pentru
+            criticii de filme, un spatiu ce le permite exprimarea opiniilor, notelor prin postarea publica
+            a recenziilor, referitoare la filmele deja vizionate si pe care vor urma sa le urmareasca
+            in cadrul platformei.
+        </p>
+    </section>
+
+    <section id="intended-audience">
+        <h3>Public ținta</h3>
+        <p>
+            Vom prezenta o descriere generala a aplicatiei, urmand ca apoi sa fie detaliata
+            interactiunea utlizatorului cu aceasta. Acest document se adreseaza in principal criticilor de filme,
+            si vizeaza in special principalele functionalitati ale aplicatiei si modul de interactiune cu publicul.
+        </p>
+    </section>
+    <section id="vision">
+        <h3>Viziune</h3>
+        <p>
+            Aplicatia doreste sa usureze efortul depus de critici pentru a posta public recenziile lor
+            asupra filmelor vizionate, prin dispunerea listelor de filme salvate, vizionate si neterminate stabilite
+            de utilizator si prin usoara gestionare a recenziilor acestora si a detaliilor suplimentare. De asemenea,
+            sunt puse la dispozitie recenzii ale altor critici pentru ca utilizatorul sa poata facilita si de alte
+            pareri externe.
+        </p>
+    </section>
+</section>
+
+<!-- 2. Description -->
+<section id="description" role="doc-introduction">
+    <h2>Descriere</h2>
+    <section id="perspective">
+        <h3>Perspectiva</h3>
+        <p>
+            Aplicatia reprezinta o abordare noua, moderna prin care sa se desfasoare procesul de jurizare al filmelor
+            disponibile. Avand realitatea mixta drept extensie, OSC-AR propune o metoda inovativa prin care criticii
+            pot interactiona atat cu ceilalti critici inregistrati pe platforma, cat si cu materialul, anume filmul,
+            care este supus  unei analize proprii, si detaliile acestuia care pot contribui la documentare.
+        </p>
+    </section>
+
+    <section id="functions">
+        <h3>Functiile Produsului</h3>
+        <p>
+            Potrivit oricarei platforme ce pune la dispozitia utilizatorului un set de
+            caracteristici de care poate beneficia, si OSC-AR prezinta in randul sau 
+            urmatoarele facilitati:
+            <ul>
+                <li>Crearea unui cont si inregistrarea unui utilizator</li>
+                <li>Selectarea filmelor ce pot fi adaugate in propria colectie</li>
+                <li>Compunerea si publicarea unei recenzii</li>
+                <li>Crearea sau participarea la watch party-uri impreuna cu alti critici</li>
+                <li>Vizualizarea filmelor de actualitate si detaliile lor</li>
+                <li>Participarea la mai multe comunitati</li>
+            </ul>
+        </p>
+    </section>
+
+    <section id="functions">
+        <h3>Limitari</h3>
+        <p>
+           Pentru un proces evolutiv al aplicatiei, vom puncta mai departe cateva puncte slabe
+           pe care o pot constrange la momentul actual:
+           <ul>
+                <li>Oboseala vizuala in cazul folosirii headset-urilor</li>
+                <li>Dependenta la internet stabilă pentru functiile de sincronizare si vizionare a filmelor in grup.</li>
+                <li>Necesitatea unui headset, acesta nefiind accesibil tuturor utilizatorilor</li>
+                <li>Dependenta unui mediu corespunzator care sa nu afecteze acuratetea AR-ului.</li>
+           </ul>
+        </p>
+    </section>
+</section>
+
+<!--3.External Interface Requirements-->
+<section id="interfaces">
+    <h2>Prezentare Vizuala a Prototipurilor</h2>
+    <section id="mobile-interfaces">
+        <h3>Interfata mobila</h3>
+        <p>
+            Aplicatia mobila ofera o interfata moderna, fezabila si intuitiva la navigarea acesteia, placuta din punct
+            de vedere vizual pentru a imbunatati experienta utilizatorului. OSC-AR include numeroase elemente de design
+            potrivite scopului sau fundamental; au fost selectate cu vigilitate culorile, iconitele, fonturile prezente, iar 
+            logo-ul a fost realizat folosind diverse resurse ajutatoare, resurse care au permis o creatie personalizata.
+        </p>
+    </section>
+
+    <section id="mr-interface">
+        <h3>Interfata Headset MR</h3>
+        <p>
+            Interfata este compusa din 4 componente esentiale: un video player ce permite continuarea, oprirea temporara,
+            redarea inainte sau inapoi cu 15 secunde a filmului; un chat specific watch party-ului in care participantii 
+            pot comunica in timp real in timpul vizionarii; fereastra ce ofera detalii suplimentare despre filmul curent
+            care este redat; o fereastra ce dispune o lista de diverse alte filme ce sunt sugerate utilizatorului sa le 
+            urmareasca.
+        </p>
+    </section>
+    
+</section>
+
+<section id="tehnologii">
+    <h2>Tehnologii utilizate</h2>
+    <p>
+        Figma este o aplicatie web colaborativa pentru a proiecta interfete, cu functii offline
+        suplimentare. Setul de unelte pe care le dispune platforma se concentreaza pe interfata
+        si experienta utilizatorului, cu accent pe colaborarea in timp real intre creatori.
+        <br> 
+        Figma permite userilor sa creeze design-uri in trei moduri diferite: design mod, prototype
+        mod, developer mod. Cel folosit in proiectul descris anterior este prototype mod, prin care
+        se realizeaza fluxuri interactive intre cadre si ecrane, astfel incat utilizatorii sa poata 
+        testa UX si sa lege diverse cadre pentru a simula navigarea.
+    </p>
+</section>
+
+<section id="other-resources">
+    <h2>Resurse Principale</h2>
+    <ul>
+        <li>http://pxdotpt.com/hci2025</li>
+        <li>https://help.figma.com/hc/en-us/sections/30880632542743</li>
+        <li>https://fonts.google.com/icons?icon.size=55&icon.color=%23F4EBB3</li>
+        <li>https://gifer.com/en/category/Movies</li>
+    </ul>
+</section>
+
+</body>
+</html>
